@@ -6,5 +6,4 @@ soup = BeautifulSoup(response.text, "html.parser")
 
 questions = soup.select(".question-summary")
 for question in questions:
-
     print(question.select_one(".question-hyperlink").get_text())
